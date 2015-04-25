@@ -3,7 +3,7 @@ import email
 from MailParser import *
 
 M = imaplib.IMAP4_SSL('imap.gmail.com')
-M.login('rodrdownserver@gmail.com', 'downserver')
+M.login('marcusdownserver@gmail.com', 'downserver')
 M.select()
 typ, data = M.search(None, 'ALL')
 for num in data[0].split():
