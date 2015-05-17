@@ -1,9 +1,8 @@
 import imaplib
-import email
-from MailParser import *
+from MailParser import MailParser
 
 M = imaplib.IMAP4_SSL('imap.gmail.com')
-M.login('rodrdownserver@gmail.com', 'downserver')
+M.login(, )
 M.select()
 typ, data = M.search(None, 'ALL')
 for num in data[0].split():
